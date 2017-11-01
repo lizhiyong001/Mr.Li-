@@ -1,0 +1,6 @@
+$('form表单元素').ajaxSubmit(function(res) {
+     res为接口返回值
+ });
+
+Api:  https://github.com/malsup/form
+

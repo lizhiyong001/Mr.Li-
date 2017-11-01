@@ -1,0 +1,2 @@
+// 初始化下拉框 参数的意思为 去掉搜索功能
+ $('.元素').select2({minimumResultsForSearch: -1});

@@ -1,0 +1,51 @@
+//  生成表格
+    function initDetailTable() {
+        var columns = [
+            {
+                "data": "参数"   
+            },
+            {
+                "data": "参数"    
+            },
+            {
+                "data": "参数"
+            },
+            {
+                "data": "参数",
+                render: function(data,ind,el){
+                    if(data == 1){
+                        return '<em>成功</em>'
+                    }else if(data == 0){
+                        return '<em>处理中</em>'
+                    }else if(data == -1){
+                        return '<em>失败</em>'
+                    }
+                }
+            }
+        ];
+        var tableParam = {
+            pageLength: 5 // 一页显示几条
+        };
+        var outParam = {
+           // 需要传递的参数
+        };
+        var initComplete = function(){
+           // 渲染完表格后执行的函数
+        }
+        dataTable.table('空数据时显示的文字','表格id元素', tableParam, '/wallet/record-list', columns, outParam,initComplete);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,17 @@
+    <div class="remodal-wrapper remodal-is-opened">
+        <div class="remodal remodal-is-initialized remodal-is-opened" data-remodal-id="自定义值" data-remodal-options="closeOnConfirm:false,closeOnOutsideClick: false" tabindex="-1">
+            <div>
+		这里放内容
+	    </div>
+        </div>
+    </div>
+
+    $('[data-remodal-id=自定义值]').remodal().open();开启弹窗
+    $('[data-remodal-id=自定义值]').remodal().close();关闭弹窗
+
+    data-target="#自定义值"  // 自定义属性 通过点击元素开启弹窗 无需js操作
+
+
+
+
+

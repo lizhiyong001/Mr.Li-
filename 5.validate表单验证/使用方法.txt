@@ -1,0 +1,29 @@
+$(forms).validate({
+ rules:{
+    表单name名称:{
+        required:true
+     }
+  },
+   messages:{
+    表单name名称:{
+          required:'提示信息'
+      },
+  },
+  submitHandler:function(){
+    // 做验证完成后的逻辑
+  }
+})
+
+
+// 消除所有起泡提示
+ $('.qtip').qtip('destroy',true);
+
+
+
+
+
+
+
+
+
+
