@@ -1,0 +1,55 @@
+var dropload=$('.元素').dropload({
+	scrollArea : window, // 默认
+	distance: 50, // 间距
+	domUp : {  // 下拉状态改变
+            domClass   : 'dropload-up',
+            domRefresh : '<div class="dropload-refresh">↓下拉刷新</div>',
+            domUpdate  : '<div class="dropload-update">↑释放更新</div>',
+            domLoad    : '<div class="dropload-load">加载中...</div>'
+        },
+        domDown : { // 上拉状态改变
+            domClass : 'dropload-down',
+            domRefresh : '<div class="dropload-refresh">↑上拉加载更多</div>',
+            domLoad : '<div class="dropload-load">加载中...</div>',
+            domNoData : '<div class="dropload-noData">暂无更多数据</div>'
+        },
+	loadUpFn:function(me){
+		// 下拉处理事项
+	},
+	loadDownFn:function(me){
+		// 上拉处理事项
+	}
+})
+
+
+dropload.lock(); // 锁定 位置
+dropload.lock('up')// 锁定 上方
+dropload.lock('down')// 锁定 下方
+dropload.unlock(); // 解锁位置
+dropload.noData(true); || me.noData(); // 显示无数据
+dropload.noData(false); // 显示上拉加载更多
+dropload.resetload();// 每次数据加载完，必须重置
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
