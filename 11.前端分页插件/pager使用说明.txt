@@ -1,0 +1,34 @@
+
+html use  <div class="page-container"><ul class="pagination" id="page1"></ul></div>
+
+js use   page({
+	
+		num:9,	//页码数
+			
+		startnum:6, //指定页码
+			
+		elem:$('#page1'), //指定的元素
+			
+		callback:function(n){ //回调函数
+
+		 	n 为页码
+			
+		}
+	
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
